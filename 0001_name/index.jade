@@ -3,10 +3,12 @@ extends ./layout/layout
 block head
 	include ./data/page-data.jade
 	//- link(rel='stylesheet',href='./css/base.css')
+	link(rel='stylesheet', href='../common/css/font-awesome.min.css')
+	link(rel='stylesheet', href='../common/css/_nav.css')
 	link(rel='stylesheet', href='../public/css/view.css')
 
 block content
-	//- include ./module/_header.jade
+	include ../common/module/_nav.jade
 	include ./module/_module1.jade
 	include ./module/_module2.jade
 
@@ -15,4 +17,5 @@ block script
 	script(src='../common/js/jquery-1.11.2.js')
 	script(src='../public/js/master.js')
 	script(src='../public/js/data.js')
+	script(src='../public/js/ui.js')
 	script(src='../public/js/view.js')

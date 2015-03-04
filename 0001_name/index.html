@@ -14,12 +14,34 @@
     <script src="../../js/css3-mediaqueries.js"></script><![endif]-->
     <link rel="stylesheet" href="../common/css/reset.css">
   </head>
+  <link rel="stylesheet" href="../common/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../common/css/_nav.css">
   <link rel="stylesheet" href="../public/css/view.css">
   <body>
     <header class="global-header">
       <h1>グローバルヘッダー</h1>
     </header>
     <div class="wrapper">
+      <header class="header">
+        <h1 class="header__title"><a href="">タイトル</a></h1><a href="" class="header__prev-btn">戻る</a>
+        <button class="header__nav-btn fa fa-bars">
+          <p class="hide-text">開く</p>
+        </button>
+        <button class="header__search-btn"><i class="fa fa-search"></i>
+          <p class="hide-text">検索</p>
+        </button>
+      </header>
+      <nav class="nav">
+        <button class="nav__close-btn fa fa-times">
+          <p class="hide-text">閉じる</p>
+        </button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">menu-1</a></li>
+          <li><a href="#">menu-2</a></li>
+          <li><a href="#">menu-3</a></li>
+        </ul>
+      </nav>
       <section class="module1">
         <h1>module1</h1>
         <p class="text">texttexttexttexttexttexttexttexttexttext</p>
@@ -40,6 +62,7 @@
     <script src="../common/js/jquery-1.11.2.js"></script>
     <script src="../public/js/master.js"></script>
     <script src="../public/js/data.js"></script>
+    <script src="../public/js/ui.js"></script>
     <script src="../public/js/view.js"></script>
   </body>
 </html>

@@ -1,0 +1,112 @@
+@charset "UTF-8"
+
+.hide-text
+	text-indent 100%
+	white-space nowrap
+	overflow hidden
+	// TODO: it is hack
+	height 0
+	width 0
+
+// header
+.header
+	position relative
+	height 42px
+	background #aaa
+
+	.header__title
+		text-align center
+		a
+			color #fff
+			font-size 1.2rem
+
+	.header__prev-btn
+		arrowColor = #f4f4f4
+		position absolute
+		top 50%
+		left 20px
+		margin-top -.8rem
+		display inline-block
+		padding 8px 8px 8px 6px
+		font-size .7rem
+		border-left 0
+		border-radius 0 3px 3px 0
+		background arrowColor
+		&::before
+			content ''
+			position absolute
+			top 0
+			left -18px
+			border 14px solid transparent
+			border-left-width 8px
+			border-right-width 10px
+			border-right-color arrowColor
+
+	.header__nav-btn
+		position absolute
+		top 0
+		right 0
+		display block
+		width 40px
+		height 40px
+		background 0
+		border 0
+		padding 0
+
+	.header__search-btn
+		position absolute
+		top 10px
+		right 40px
+		border 0
+		background none
+		font-size 15px
+		color #212121
+
+// nav
+.nav
+	width 100%
+	position fixed
+	top 0
+	bottom 0
+	background rgba(0, 0, 0, .7)
+	overflow auto
+	display none
+	&.is-open
+		display block
+	.nav__close-btn
+		position fixed
+		top 5px
+		right 5px
+		color #fff
+		background transparent
+		border 0
+	ul
+		padding 30px 0
+		margin 0 10px
+		li
+			margin-bottom 2px
+			a
+				display block
+				padding 10px
+				width 100%
+				box-sizing border-box
+				color #000
+				text-align center
+				background rgb(255,255,255)
+				&:hover
+					background #f80
+					color #fff
+
+
+
+
+
+
+
+
+
+
+
+
+
+

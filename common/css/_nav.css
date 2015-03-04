@@ -1,0 +1,102 @@
+@charset "UTF-8";
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+}
+.header {
+  position: relative;
+  height: 42px;
+  background: #aaa;
+}
+.header .header__title {
+  text-align: center;
+}
+.header .header__title a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.header .header__prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  margin-top: -0.8rem;
+  display: inline-block;
+  padding: 8px 8px 8px 6px;
+  font-size: 0.7rem;
+  border-left: 0;
+  border-radius: 0 3px 3px 0;
+  background: #f4f4f4;
+}
+.header .header__prev-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -18px;
+  border: 14px solid transparent;
+  border-left-width: 8px;
+  border-right-width: 10px;
+  border-right-color: #f4f4f4;
+}
+.header .header__nav-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: 0;
+  border: 0;
+  padding: 0;
+}
+.header .header__search-btn {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  border: 0;
+  background: none;
+  font-size: 15px;
+  color: #212121;
+}
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  overflow: auto;
+  display: none;
+}
+.nav.is-open {
+  display: block;
+}
+.nav .nav__close-btn {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  color: #fff;
+  background: transparent;
+  border: 0;
+}
+.nav ul {
+  padding: 30px 0;
+  margin: 0 10px;
+}
+.nav ul li {
+  margin-bottom: 2px;
+}
+.nav ul li a {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #000;
+  text-align: center;
+  background: #fff;
+}
+.nav ul li a:hover {
+  background: #f80;
+  color: #fff;
+}
