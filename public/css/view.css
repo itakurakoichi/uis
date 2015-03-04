@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/**
+ * common setting: separate other file
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1rem;
+}
+.wrapper {
+  padding: 7px 7px 0;
+}
+img {
+  vertical-align: bottom;
+}
+/**
+ * setting each view style
+ */
+._0000_ui-name.view {
+  margin-bottom: 20px;
+}
+._0000_ui-name.view .section1 {
+  margin-top: 20px;
+}

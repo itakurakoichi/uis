@@ -1,0 +1,18 @@
+doctype html
+html(lang='ja')
+
+	//- TODO: include common data
+	//- include ../../data/data.jade
+	block head
+	include ../../common/module/_head.jade
+
+	body
+		include ../../common/module/_gheader.jade
+		.wrapper
+			block content
+				//- extend unique module
+			include ../../common/module/_footer.jade
+
+		//- TODO: include common script
+		//- include ./module/_script.jade
+		block script
