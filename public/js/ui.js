@@ -3,7 +3,6 @@
 
 	var _ui = {
 		toggleClass: function(opts) {
-			console.log('### opts: ', opts)
 			opts = opts || {};
 			var btn       = opts.btn || [];
 			var target    = opts.target || '';
@@ -16,7 +15,8 @@
 			}
 
 			$(btn).on('click', function() {
-				$(target).toggleClass(className);
+				// $(target).toggleClass(className);
+				$(target).slideToggle(className);
 			});
 		}
 	}
