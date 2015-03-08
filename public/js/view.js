@@ -291,7 +291,7 @@
 	}
 
 	w.addEventListener('load', _util.hideMenu);
-	_routes();
+	// _routes();
 
 	/*
 	 * mouse action

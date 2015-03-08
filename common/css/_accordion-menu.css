@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.accordion-menu a {
+  display: block;
+  position: relative;
+  color: #000;
+}
+.accordion-menu a.is-open::after,
+.accordion-menu a.is-close::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -0.55rem;
+  font-size: 1.1rem;
+  font-family: FontAwesome;
+  color: #000;
+}
+.accordion-menu a.is-open::after {
+  content: "\f077";
+}
+.accordion-menu a.is-close::after {
+  content: "\f078";
+}
+.accordion-menu--theme a {
+  color: #000;
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+.accordion-menu--theme dt,
+.accordion-menu--theme dd {
+  border-bottom: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+.accordion-menu--theme dt {
+  background: #fff;
+}
+.accordion-menu--theme dt:first-child {
+  border-top: 1px solid #aaa;
+}
+.accordion-menu--theme dd {
+  padding: 10px;
+  background: #f4f4f4;
+}

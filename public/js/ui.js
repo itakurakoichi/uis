@@ -1,3 +1,10 @@
+/*
+ * history
+ *   15.03.05 TODO: code of running method transfer other file
+ *   15.03.05 accordionMenu: .toggle is not need a tag
+ *   
+ */
+
 (function(w) {
 	"use strict";
 
@@ -18,6 +25,29 @@
 				// $(target).toggleClass(className);
 				$(target).slideToggle(className);
 			});
+		},
+		accordionMenu: function(opts) {
+			var wrapper = opts.wrapper || '';
+			var panel = opts.panel || '';
+			var toggle = opts.toggle || '';
+
+			var $wrapper = $(wrapper);
+			var $panel = $wrapper.find(panel);
+			var $toggle = $wrapper.find(toggle);
+
+			$panel.hide();
+			$toggle.removeClass('is-open').addClass('is-close');
+
+			$toggle.click(function(e){
+				e.preventDefault();
+				if($(this).hasClass('is-close')) {
+					$(this).parent().next().slideDown();
+					$(this).removeClass('is-close').addClass('is-open');
+				} else {
+					$(this).parent().next().slideUp();
+					$(this).removeClass('is-open').addClass('is-close');
+				}
+			});
 		}
 	}
 
@@ -26,5 +56,12 @@
 		target: '.nav',
 		className: 'is-open'
 	});
+
+	_ui.accordionMenu({
+		wrapper: '.accordion-menu',
+		panel: 'dd',
+		toggle: '.toggle'
+	});
+
 
 })(this);

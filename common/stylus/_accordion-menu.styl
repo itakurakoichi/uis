@@ -1,0 +1,41 @@
+@charset "UTF-8"
+
+.accordion-menu
+	a
+		display block
+		position relative
+		color #000
+		&.is-open::after,
+		&.is-close::after
+			fontSize = 1.1rem 
+			position absolute
+			top 50%
+			right 10px
+			margin-top - (fontSize / 2)
+			font-size fontSize
+			font-family FontAwesome
+			color #000
+		&.is-open::after
+			content "\f077"
+		&.is-close::after
+			content "\f078"
+
+.accordion-menu--theme
+	borderColor = #aaa
+	a
+		color #000
+		font-size 1.0rem
+		padding 10px 15px
+	dt, dd
+		border-bottom 1px solid borderColor
+		border-left 1px solid borderColor
+		border-right 1px solid borderColor
+	dt
+		background #fff
+		&:first-child
+			border-top 1px solid borderColor
+	dd
+		padding 10px
+		background #f4f4f4
+
+
