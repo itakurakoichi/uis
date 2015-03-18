@@ -58,10 +58,15 @@
 				}
 			});
 		},
-		/*
+		/**
+		 * pull down area
 		 * 15.03.18
-		 * almost same accordionMenu.
-		 * TODO: merge
+		 * -- display area and hider area (i.e. toggle...)
+		 * -- TODO: almost same accordionMenu, to merge
+		 *
+		 * @param   {Object}     opts            required
+		 * @param   {dom}        opts.trigger    required
+		 * @param   {dom}        opts.target     required
 		 */
 		pullDown: function(opts) {
 			opts = opts || {};
