@@ -1,0 +1,28 @@
+@charset 'UTF-8'
+
+// need
+.pull-down__trigger
+	&.open::before,
+	&.close::before
+		font-family FontAwesome
+	&.close::before
+		content '\f078'
+	&.open::before
+		content '\f077'
+
+// design
+.pull-down__trigger
+	padding 10px
+	background #aaa
+	color #fff
+
+	&.open::before,
+	&.close::before
+		margin-right 8px
+
+.pull-down__target
+	padding 10px
+	background #f4f4f4
+	line-height 1.4
+
+

@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+.pull-down__trigger.open::before,
+.pull-down__trigger.close::before {
+  font-family: FontAwesome;
+}
+.pull-down__trigger.close::before {
+  content: '\f078';
+}
+.pull-down__trigger.open::before {
+  content: '\f077';
+}
+.pull-down__trigger {
+  padding: 10px;
+  background: #aaa;
+  color: #fff;
+}
+.pull-down__trigger.open::before,
+.pull-down__trigger.close::before {
+  margin-right: 8px;
+}
+.pull-down__target {
+  padding: 10px;
+  background: #f4f4f4;
+  line-height: 1.4;
+}

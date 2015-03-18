@@ -6,10 +6,12 @@ block head
 	link(rel='stylesheet', href='../common/css/font-awesome.min.css')
 	link(rel='stylesheet', href='../common/css/_nav.css')
 	link(rel='stylesheet', href='../common/css/_accordion-menu.css')
+	link(rel='stylesheet', href='../common/css/_pull-down.css')
 	link(rel='stylesheet', href='../public/css/view.css')
 
 block content
 	//- uis
+	include ../common/module/_pull-down.jade
 	include ../common/module/_nav.jade
 	include ../common/module/_accordion-menu.jade
 
