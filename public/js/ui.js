@@ -91,6 +91,11 @@
 		}
 	}
 
+	$('.switcher').on('click', function (e) {
+		e.preventDefault();
+		$('body').toggleClass('show-off-canvas');
+	});
+
 	_ui.pullDown({
 		trigger: $('.pull-down__trigger'),
 		target: $('.pull-down__target')
@@ -107,6 +112,5 @@
 		panel: 'dd',
 		toggle: '.toggle'
 	});
-
 
 })(this);
