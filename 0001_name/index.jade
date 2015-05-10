@@ -7,24 +7,25 @@ block head
 	link(rel='stylesheet', href='../common/css/_nav.css')
 	link(rel='stylesheet', href='../common/css/_accordion-menu.css')
 	link(rel='stylesheet', href='../common/css/_pull-down.css')
+	link(rel='stylesheet', href='../common/css/_off-canvas.css')
 	link(rel='stylesheet', href='../public/css/view.css')
 
 block content
 	//- uis
-	include ../common/module/_pull-down.jade
-	include ../common/module/_nav.jade
-	include ../common/module/_accordion-menu.jade
+	include ../common/module/_off-canvas.jade
+	//- include ../common/module/_pull-down.jade
+	//- include ../common/module/_nav.jade
+	//- include ../common/module/_accordion-menu.jade
 
 	//- uniq modules
-	h1 ユニークモジュール
-	include ./module/_module1.jade
-	include ./module/_module2.jade
+	//- h1 ユニークモジュール
+	//- include ./module/_module1.jade
+	//- include ./module/_module2.jade
 
 block script
 	//- public data and script 
 	script(src='../common/js/jquery-1.11.2.js')
 	script(src='../public/js/master.js')
 	script(src='../public/js/data.js')
-
 	script(src='../public/js/ui.js')
 	script(src='../public/js/view.js')
